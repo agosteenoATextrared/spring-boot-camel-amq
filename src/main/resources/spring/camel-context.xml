@@ -52,5 +52,13 @@
             </choice>
             <log id="route-final-log" message="Done processing ${file:name}"/>
         </route>
+
+        <route id="rottaProva">
+            <from uri="activemq:codaStart"/>
+
+            <log message="********** strapuppa **********"/>
+
+            <inOnly uri="activemq:codaEnd"/>
+        </route>
     </camelContext>
 </beans>
