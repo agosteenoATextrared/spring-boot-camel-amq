@@ -56,7 +56,7 @@
         <route id="rottaProva">
             <from uri="activemq:codaStart"/>
 
-            <log message="********** strapuppa **********"/>
+            <log message="********** strapuppa ********** corpo messaggio [${body}]"/>
 
             <inOnly uri="activemq:codaEnd"/>
         </route>
